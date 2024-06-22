@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.nav {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.child {
+    margin-left: 20px;
+}
+
+.logo
+{
+    height: 60px;
+}
+
+body {
+    min-height: 200vh;
+    background-color: grey;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+}
+
+.header {
+    height: 85vh;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
