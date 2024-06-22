@@ -59,7 +59,7 @@
 
 body {
     min-height: 200vh;
-    background-color: grey;
+    background-color: white;
 }
 
 .banner {
@@ -113,4 +113,22 @@ a {
     line-height: 1;
     font-family: var(--font-1);
     color: white;
+}
+
+.trusted-by img {
+    width: 130px;
+    margin: 0px 20px 
+}
+.trusted-by {
+    text-align: center;
+    margin-top: 90px;
+}
+.trusted-by ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trusted-by h1 {
+    margin-bottom: 30px;
+    color: black;
 }
