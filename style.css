@@ -1,3 +1,33 @@
+/* Clean Code */
+
+/* Variables */
+:root {
+    --color-1: white;
+    --color-2: black;
+    --color-3: grey;
+    --font-1: "Poppins", sans-serif;
+  }
+.emphasised-link-container a {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 1rem;
+    font-family: var(--font-1);
+    padding: 12px;
+}
+.emphasised-link-container {
+    background-color: transparent;
+}   
+.emphasised-link-container :hover {
+    background-color: var(--color-3);
+    border-color: var(--color-3);
+}
+.link:hover
+{
+    text-decoration: underline;
+}
+
+/* Ugly Code */
+
 * {
     padding: 0px;
     margin: 0;
@@ -16,6 +46,10 @@
 
 .child {
     margin-left: 20px;
+    color: black;
+}
+.child:hover {
+    text-decoration: underline;
 }
 
 .logo
@@ -35,10 +69,48 @@ body {
 
 .header {
     height: 85vh;
-    background-image: url(images/banner.jpg);
+    background-image: url(images/banner-dark-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.inner-header {
+    text-align: center;
+    /* background-color: white; */
+    padding: 20px;
+}
+.inner-header h1 {
+    margin-bottom: 10px;
+}
+.inner-header h4 {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-1);
+    color: white;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    font-family: var(--font-1);
+    color: white;
+}
+
+a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    font-family: var(--font-1);
+    color: white;
+}
