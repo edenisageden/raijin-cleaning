@@ -215,3 +215,15 @@ a {
     border-top: 1px solid black;
 }
 
+.phone h4 {
+    color: black;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    padding-left: 40px;
+}
