@@ -162,6 +162,7 @@ a {
 
 .flex-container-wrapper {
     padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .text-container {
@@ -189,3 +190,28 @@ a {
 .text-container h4, .text-container-2-wrapper h4 {
     padding-bottom: 30px;
 }
+
+.footer-link-list a {
+    color: black;
+}
+
+.socials img {
+    width: 35px;
+    padding-left: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+    border-top: 1px solid black;
+    align-items: center;
+}
+
+.footer-link-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 300px;
+    border-top: 1px solid black;
+}
+
