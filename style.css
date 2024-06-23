@@ -1,4 +1,4 @@
-/* Clean Code */
+/* Clean code */
 
 /* Variables */
 :root {
@@ -6,18 +6,80 @@
     --color-2: black;
     --color-3: grey;
     --font-1: "Poppins", sans-serif;
+    --side-padding: 60px;
+    --section-bottom-margin: 100px;
   }
-.emphasised-link-container a {
+
+
+/* Default styling */
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-1);
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+p {
+
+}
+a {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: var(--font-1);
+}
+
+
+/* Style presets */
+
+/* Emphasized link */
+.emphasized-link a {
     background-color: var(--color-2);
     color: var(--color-1);
     font-size: 1rem;
     font-family: var(--font-1);
     padding: 12px;
 }
-.emphasised-link-container {
+.emphasized-link {
     background-color: transparent;
 }   
-.emphasised-link-container :hover {
+.emphasized-link :hover {
     background-color: var(--color-3);
     border-color: var(--color-3);
 }
@@ -26,115 +88,88 @@
     text-decoration: underline;
 }
 
-/* Ugly Code */
 
-* {
-    padding: 0px;
-    margin: 0;
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-}
+/* Blocks */
 
-.nav {
-    background: white;
+/* Header */
+.header {
     display: flex;
-    position: fixed;
-    width: 92%;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
-}
+    padding: 20px var(--side-padding);
+    background-color: white;
+    /* width: 100vw; */
 
-.child {
-    margin-left: 20px;
-    color: black;
+    /* Messy */
+    /* position: fixed;
+    width: 92% */
 }
-.child:hover {
-    text-decoration: underline;
-}
-
-.logo
-{
+.header img {
     height: 60px;
 }
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav__item {
+    margin-left: 20px;
+}
+
+/* Banner */
+.banner {
+    width: 100vw;
+    height: 550px;
+    background-image: url(images/banner-dark-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--section-bottom-margin);
+}
+.banner__text {
+    text-align: center;
+}
+.banner__text h1 {
+    color: var(--color-1);
+    margin-bottom: 10px;
+}
+.banner__text h5 {
+    color: var(--color-1);
+    margin-bottom: 30px;
+}
+
+/* Trusted by */
+.trusted-by {
+    text-align: center;
+    margin-bottom: var(--section-bottom-margin);
+}
+.trusted-by img {
+    width: 100px;
+}
+.trusted-by__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px var(--side-padding);
+}
+.trusted-by h3 {
+    margin-bottom: 30px;
+}
+
+/* Messy Code */
+
+
+
+
 
 body {
     min-height: 200vh;
     background-color: white;
 }
 
-.banner {
-    width: 100%;
-    height: 700px;
-}
 
-.header {
-    height: 100vh;
-    background-image: url(images/banner-dark-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner-header {
-    text-align: center;
-    /* background-color: white; */
-    padding: 20px;
-}
-.inner-header h1 {
-    margin-bottom: 10px;
-}
-.inner-header h4 {
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1;
-    font-family: var(--font-1);
-    color: white;
-}
-
-h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1;
-    font-family: var(--font-1);
-    color: white;
-}
-
-a {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1;
-    font-family: var(--font-1);
-    color: white;
-}
-
-.trusted-by img {
-    width: 130px;
-}
-.trusted-by {
-    text-align: center;
-    margin-top: 90px;
-}
-.trusted-by ul {
-    width: 100vl;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 100px;
-}
-.trusted-by h1 {
-    margin-bottom: 30px;
-    color: black;
-}
 
 .flex-container img {
     width: 500px;
@@ -226,4 +261,4 @@ a {
 
 .phone {
     padding-left: 40px;
-}
+} */

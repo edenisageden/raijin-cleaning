@@ -8,43 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav">
-        <a href="">
-            <img class="logo" src="images/logo-black.png" alt="">
-        </a>
-        <div class="nav-right">
-            <div class="inner-nav">
-                <a class="child" href="">HOME</a>
-                <a class="child" href="">ABOUT US</a>
-                <a class="child" href="">SERVICES</a>
-                <a class="child" href="">CONTACT</a>
-            </div>
-            <div class="phone">
-                <h5>GET IN TOUCH</h5>
-                <h4>027 123 4567</h4>
-            </div>
-        </div>
-    </nav>
+
+    <!-- Clean Code -->
+
     <header class="header">
-        <div class="inner-header">
-            <h1>RAIJIN CLEANING</h1>
-            <h4>Queenstown's leading property cleaning services.</h4>
-            <div class="emphasised-link-container">
-                <a href="">FREE QUOTE</a>
+        <a href="index.html"><img src="images/logo-black.png" alt="logo"></a>
+        <nav class="nav">
+            <a class="nav__item" href="index.html">HOME</a>
+            <a class="nav__item" href="">ABOUT US</a>
+            <a class="nav__item" href="">SERVICES</a>
+            <a class="nav__item" href="">CONTACT</a>
+            <div class="nav__item nav__phone-number">
+                <h6>GET IN TOUCH</h6>
+                <h5>123 456 7890</h4>
             </div>
-        </div>
+        </nav>
     </header>
-    <div class="trusted-by">
-        <h1>TRUSTED BY</h1>
-        <ul>
-            <img src="images/icos.png" alt="">
-            <img src="images/old-world.png" alt="">
-            <img src="images/kkkmart.png" alt="">
-            <img src="images/super-stationary.png" alt="">
-            <img src="images/heartless-hotel.png" alt="">
-            <img src="images/foodmart.png" alt="">
-        </ul>
-    </div>
+
+    <main class="main">
+
+        <section class="banner">
+            <div class="banner__text">
+                <h1>RAIJIN CLEANING</h1>
+                <h5>Queenstown's leading property cleaning services.</h5>
+                <div class="emphasized-link">
+                    <a href="">FREE QUOTE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trusted-by">
+            <h3>TRUSTED BY</h3>
+            <div class="trusted-by__images">
+                <img src="images/icos.png" alt="">
+                <img src="images/old-world.png" alt="">
+                <img src="images/kkkmart.png" alt="">
+                <img src="images/super-stationary.png" alt="">
+                <img src="images/heartless-hotel.png" alt="">
+                <img src="images/foodmart.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Messy Code -->
+
+
 
     <div class="flex-container-wrapper">
         <div class="flex-container">
@@ -52,7 +63,7 @@
             <div class="text-container">
                 <h2>Commercial Cleaning</h2>
                 <h4>Keep your workplace pristine with our specialized office and commercial cleaning services. We understand the importance of a clean business environment for both your employees and clients.</h4>
-                <div class="emphasised-link-container">
+                <div class="emphasized-link">
                     <a href="">LEARN MORE</a>
                 </div>
             </div>
@@ -62,7 +73,7 @@
                 <div class="text-container-2">
                     <h2>Residential Cleaning</h2>
                     <h4>Our home cleaning services are designed to give you the comfort and peace of mind you deserve. With our meticulous attention to detail, we’ll transform your living spaces into a spotless sanctuary.</h4>
-                    <div class="emphasised-link-container">
+                    <div class="emphasized-link">
                         <a href="">LEARN MORE</a>
                     </div>
                 </div>
@@ -74,12 +85,13 @@
             <div class="text-container">
                 <h2>Carpet Cleaning</h2>
                 <h4>Revitalize your carpets with our deep cleaning services. We use advanced techniques and eco-friendly solutions to remove stains, dirt, and allergens, ensuring your carpets are fresh and clean</h4>
-                <div class="emphasised-link-container">
+                <div class="emphasized-link">
                     <a href="">LEARN MORE</a>
                 </div>
             </div>
         </div>
     </div>
+
 
     <footer>
         <div class="footer-link-list">
@@ -96,5 +108,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 </html>
