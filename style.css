@@ -89,6 +89,33 @@ a {
 
 /* Blocks */
 
+/* Hamburger menu */
+#hamburger-menu {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    background-color: white;
+}
+.hamburger-menu__close-button__wrapper{
+    width: 30px;
+    height: 30px;
+    margin: 30px 30px 30px auto;
+}
+.hamburger-menu__close-button__wrapper button {
+    width: 100%;
+    height: 100%;
+}
+.hamburger-menu__close-button__wrapper img {
+    width: 30px;
+}
+.hamburger-menu__link__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header */
 .header__wrapper {
     position: fixed;
@@ -112,6 +139,9 @@ a {
 }
 .nav__item {
     padding-left: 20px;
+}
+.hamburger-menu__open-button__wrapper {
+    /* display: none;   */
 }
 
 /* Banner */
