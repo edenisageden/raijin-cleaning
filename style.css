@@ -141,7 +141,16 @@ a {
     padding-left: 20px;
 }
 .hamburger-menu__open-button__wrapper {
-    /* display: none;   */
+    display: none;  
+}
+@media (orientation: portrait), (max-width: 950px)
+{
+    .nav {
+        display: none;
+    }
+    .hamburger-menu__open-button__wrapper {
+        display: block;  
+    }
 }
 
 /* Banner */
