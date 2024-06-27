@@ -4,7 +4,7 @@
     --color-2: black;
     --color-3: grey;
     --font-1: "Poppins", sans-serif;
-    --side-padding: 60px;
+    --side-padding: 30px;
     --section-bottom-margin: 100px;
   }
 
@@ -110,6 +110,13 @@ h6 {
 .hamburger-menu__link__wrapper {
     display: flex;
     flex-direction: column;
+    margin: 90px 0 0 var(--side-padding);
+}
+.hamburger-menu__link__wrapper a {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 30px;
 }
 .hamburger-menu__button__wrapper {
     z-index: 4;
@@ -117,7 +124,7 @@ h6 {
     width: 30px;
     height: 30px;
     top: 35px;
-    right: 35px;
+    right: var(--side-padding);
     display: none;
 }
 .hamburger-menu__button__wrapper button {
