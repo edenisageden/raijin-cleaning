@@ -9,18 +9,19 @@
 </head>
 <body>
 
-    <div id="hamburger-menu">
-        <div class="hamburger-menu__close-button__wrapper">
-            <button onclick="toggleMenu()">
-                <img src="images/placeholder.png" alt="Hamburger menu close">
-            </button>
-        </div>
+    <div id="hamburger-menu" style="width: 0%">
         <div class="hamburger-menu__link__wrapper">
             <a class="hamburger-menu__link" href="index.html">HOME</a>
             <a class="hamburger-menu__link" href="">ABOUT US</a>
             <a class="hamburger-menu__link" href="">SERVICES</a>
             <a class="hamburger-menu__link" href="">CONTACT</a>
         </div>
+    </div>
+
+    <div class="hamburger-menu__button__wrapper">
+        <button onclick="toggleMenu()">
+            <img id="hamburger-menu__button__img" src="images/hamburger-menu.svg" alt="Hamburger menu toggle">
+        </button>
     </div>
 
     <div class="header__wrapper">
@@ -36,11 +37,6 @@
                     <h5>123 456 7890</h4>
                 </div>
             </nav>
-            <div class="hamburger-menu__open-button__wrapper">
-                <button onclick="toggleMenu()">
-                    <img src="images/placeholder.png" alt="Hamburger menu open">
-                </button>
-            </div>
         </header>
     </div>
 
