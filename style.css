@@ -326,35 +326,101 @@ h6 {
 }
 
 /* Contact */
-/* .contact {
-    margin-top: 130px;
+.contact {
+    margin-top: 150px;
     margin-bottom: var(--section-bottom-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.contact h2 {
+    margin-bottom: 50px;
 }
 .info-and-message__wrapper {
     display: flex;
-    flex-direction: row;
 }
 .info {
-    max-width: 300px;
+    max-width: 250px;
+    margin-right: 30px;
 }
 .info p {
     margin-bottom: 40px;
 }
-.info-and-message__wrapper input {
+.message {
+    display: flex;
+    flex-direction: column;
+}
+.message input {
     width: 450px;
     height: 40px;
     margin-bottom: 20px;
 }
-.info-and-message__wrapper textarea {
+.message textarea {
     height: 150px;
     margin-bottom: 20px;
 }
-.info-and-message__wrapper select {
+.message select {
     height: 40px;
     margin-bottom: 20px;
 }
-.info-and-message__wrapper button {
+.message button {
     background-color: black;
     color: white;
     height: 40px;
-} */
+} 
+@media (orientation: portrait), (max-width: 950px)
+{
+    .info-and-message__wrapper {
+        flex-direction: column;
+    }
+}
+@media (max-width: 650px)
+{
+    .message input {
+        width: 350px;
+    }
+    .message textarea {
+        width: 350px;
+    }
+    .message select {
+        width: 350px;
+    }
+    .message button {
+        width: 350px;
+    }
+}
+@media (max-width: 450px)
+{
+    .message input {
+        width: 250px;
+    }
+    .message textarea {
+        width: 250px;
+    }
+    .message select {
+        width: 250px;
+    }
+    .message button {
+        width: 250px;
+    }
+}
+@media (max-width: 350px)
+{
+    .message input {
+        width: 200px;
+    }
+    .message textarea {
+        width: 200px;
+    }
+    .message select {
+        width: 200px;
+    }
+    .message button {
+        width: 200px;
+    }
+}
+
+
+
+
+
