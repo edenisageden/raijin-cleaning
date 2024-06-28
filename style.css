@@ -245,6 +245,19 @@ h6 {
 .trusted-by h3 {
     margin-bottom: 30px;
 }
+@media (max-width: 700px)
+{
+    .trusted-by img {
+        height: 60px;
+    }
+}
+@media (max-width: 450px)
+{
+    .trusted-by img {
+        height: 40px;
+    }
+}
+
 
 /* Services */
 .services {
