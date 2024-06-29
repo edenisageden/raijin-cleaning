@@ -4,6 +4,8 @@ const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 const company = document.getElementById('company');
 const address = document.getElementById('address');
+const subject = document.getElementById('subject');
+const message = document.getElementById('message');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -40,6 +42,8 @@ const validateInputs = () => {
     const phoneValue = phone.value.trim();
     const addressValue = address.value.trim();
     const companyValue = company.value.trim();
+    // const subjectValue = subject.value();
+    const messageValue = message.value.trim();
 
     if(usernameValue === '') {
         setError(username, 'Name is required');
@@ -56,7 +60,7 @@ const validateInputs = () => {
     }
 
     if(phoneValue === '') {
-        setError(password, 'Phone number is required');
+        setError(phone, 'Phone number is required');
     } else if (phoneValue.length < 10 ) {
         setError(phone, 'Phone number must be at least 10 numbers.')
     } else {
@@ -74,4 +78,16 @@ const validateInputs = () => {
     } else {
         setSuccess(company);
     }
+
+    if(messageValue === '') {
+        setError(message, 'Please enter a message');
+    } else {
+        setSuccess(message);
+    }
+
+    // if(subjectValue === 'Subject') {
+    //     setError(subject, 'Please enter a subject');
+    // } else {
+    //     setSuccess(subject);
+    // }
 };

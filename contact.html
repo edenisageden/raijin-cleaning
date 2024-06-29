@@ -56,23 +56,22 @@
                 <div class="container">
                     <form id="form" action="/">
                         <div class="input-control">
+                            <label for="subject">Subject</label>
+                            <select title="Subject" id="subject" name="subject" type="subject">
+                                <option>Subject</option>
+                                <option>Commercial cleaning</option>
+                                <option>Residential cleaning</option>
+                                <option>Carpet cleaning</option>
+                                <option>Question</option>
+                                <option>Compliment</option>
+                                <option>Complaint</option>
+                                <option>Other</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
                             <label for="username">Name</label>
                             <input id="username" name="username" type="text">
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="text">
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <label for="phone">Phone</label>
-                            <input id="phone"name="phone" type="phone">
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <label for="address">Address</label>
-                            <input id="address"name="address" type="address">
                             <div class="error"></div>
                         </div>
                         <div class="input-control">
@@ -81,13 +80,23 @@
                             <div class="error"></div>
                         </div>
                         <div class="input-control">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" type="message"></textarea>
+                            <label for="phone">Phone</label>
+                            <input id="phone"name="phone" type="phone">
                             <div class="error"></div>
                         </div>
                         <div class="input-control">
-                            <label for="subject">Subject</label>
-                            
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="address">Address</label>
+                            <input id="address"name="address" type="address">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" type="message"></textarea>
                             <div class="error"></div>
                         </div>
                         <button type="submit">Send Message</button>
