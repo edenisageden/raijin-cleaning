@@ -22,10 +22,10 @@ images[1] = "images/banner2.jpg";
 images[2] = "images/banner3.jpg";
 images[3] = "images/banner4.jpg";
 
-titles[0] = "Raijin Cleaning";
-titles[1] = "Commercial Cleaning";
-titles[2] = "Residential Cleaning";
-titles[3] = "Carpet Cleaning";
+titles[0] = " RAIJIN CLEANING";
+titles[1] = "COMMERCIAL CLEANING";
+titles[2] = "RESIDENTIAL CLEANING";
+titles[3] = "CARPET CLEANING";
 
 subTitles[0] = "Queenstown's leading property cleaning services";
 subTitles[1] = "Queenstown's leading property cleaning services";
