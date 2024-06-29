@@ -202,9 +202,10 @@ h6 {
     background-position: center;
     margin-top: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: var(--section-bottom-margin);
+    padding: 0 var(--side-padding);
 }
 .banner__text {
     text-align: center;
@@ -216,6 +217,27 @@ h6 {
 .banner__text h5 {
     color: var(--color-1);
     margin-bottom: 30px;
+}
+.banner img {
+    width: 50px;
+}
+@media (max-width: 850px)
+{
+    .banner__text h1 {
+        font-size: 3rem;
+    }
+    .banner__text h5 {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px)
+{
+    .banner__text h1 {
+        font-size: 2.5rem;
+    }
+    .banner img {
+        width: 30px;
+    }
 }
 
 /* Trusted by */
