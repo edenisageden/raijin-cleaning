@@ -42,7 +42,7 @@ const validateInputs = () => {
     const phoneValue = phone.value.trim();
     const addressValue = address.value.trim();
     const companyValue = company.value.trim();
-    // const subjectValue = subject.value();
+    const subjectValue = subject.value;
     const messageValue = message.value.trim();
 
     if(usernameValue === '') {
@@ -85,9 +85,9 @@ const validateInputs = () => {
         setSuccess(message);
     }
 
-    // if(subjectValue === 'Subject') {
-    //     setError(subject, 'Please enter a subject');
-    // } else {
-    //     setSuccess(subject);
-    // }
+    if(subjectValue === 'Subject') {
+        setError(subject, 'Please enter a subject');
+    } else {
+        setSuccess(subject);
+    }
 };
