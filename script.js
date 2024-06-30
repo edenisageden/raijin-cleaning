@@ -6,7 +6,7 @@ function toggleMenu() {
   }
   else {
     document.getElementById("hamburger-menu").style.width = "0%";
-    document.getElementById("hamburger-menu__button__img").src = "images/hamburger-menu.svg";
+    document.getElementById("hamburger-menu__button__img").src = "images/hamburger-menu-white.png";
   }
 }
 

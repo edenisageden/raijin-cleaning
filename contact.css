@@ -6,6 +6,9 @@
     background-color: black;
     border: none;
 }
+#form button:hover {
+    cursor: pointer;
+}
 
 .input-control {
     display: flex;
