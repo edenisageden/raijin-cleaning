@@ -56,3 +56,50 @@
     height: 13px;
 }
 
+@media (max-width: 650px)
+{
+    .input-control input {
+        width: 300px;
+    }
+    .input-control textarea {
+        width: 300px;
+    }
+    .input-control select {
+        width: 300px;
+    }
+    .input-control button {
+        width: 300px;
+    }
+}
+@media (max-width: 450px)
+{
+    .input-control input {
+        width: 250px;
+    }
+    .input-control textarea {
+        width: 250px;
+    }
+    .input-control select {
+        width: 250px;
+    }
+    .input-control button {
+        width: 250px;
+    }
+}
+@media (max-width: 350px)
+{
+    .input-control input {
+        width: 200px;
+    }
+    .input-control textarea {
+        width: 200px;
+    }
+    .input-control select {
+        width: 200px;
+    }
+    .input-control button {
+        width: 200px;
+    }
+}
+
+
