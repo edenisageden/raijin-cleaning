@@ -83,7 +83,7 @@ h6 {
 .emphasized-link {
     background-color: transparent;
 }   
-.emphasized-link:hover {
+.emphasized-link :hover {
     background-color: var(--color-3);
     border-color: var(--color-3);
 }
