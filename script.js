@@ -14,7 +14,6 @@ function toggleMenu() {
 var i = 0;
 var images = []
 var titles = []
-var subTitles = []
 var time = 5000;
 
 images[0] = "images/banner1.jpg";
@@ -22,19 +21,13 @@ images[1] = "images/banner2.jpg";
 images[2] = "images/banner3.jpg";
 images[3] = "images/banner4.jpg";
 
-titles[0] = " RAIJIN CLEANING";
+titles[0] = "RAIJIN CLEANING";
 titles[1] = "COMMERCIAL CLEANING";
 titles[2] = "RESIDENTIAL CLEANING";
 titles[3] = "CARPET CLEANING";
 
-subTitles[0] = "Queenstown's leading property cleaning services";
-subTitles[1] = "Queenstown's leading property cleaning services";
-subTitles[2] = "Queenstown's leading property cleaning services";
-subTitles[3] = "Queenstown's leading property cleaning services";
-
 background = document.getElementById("banner");
 title = document.getElementById("title");
-subTitle = document.getElementById("sub-title");
 
 function nextImage() {
   console.log("next");
@@ -43,7 +36,6 @@ function nextImage() {
   var imageNum = i + 1;
   background.style.backgroundImage = "url('images/banner" + imageNum + ".jpg')";
   title.innerText = titles[i];
-  subTitle.innerText = subTitles[i];
 }
 function prevImage() {
   console.log("prev");
@@ -52,5 +44,4 @@ function prevImage() {
   var imageNum = i + 1;
   background.style.backgroundImage = "url('images/banner" + imageNum + ".jpg')";
   title.innerText = titles[i];
-  subTitle.innerText = subTitles[i];
 }

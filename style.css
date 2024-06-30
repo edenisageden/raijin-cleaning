@@ -236,13 +236,9 @@ h6 {
 .banner__text {
     text-align: center;
 }
-.banner__text h1 {
+.banner__text h2 {
     color: var(--color-1);
-    margin-bottom: 10px;
-}
-.banner__text h5 {
-    color: var(--color-1);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .banner img {
     width: 50px;
