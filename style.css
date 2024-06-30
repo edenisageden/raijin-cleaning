@@ -3,6 +3,7 @@
     --color-1: white;
     --color-2: black;
     --color-3: grey;
+    --color-4: #f2f2f2;
     --font-1: "Poppins", sans-serif;
     --side-padding: 30px;
     --section-bottom-margin: 100px;
@@ -93,6 +94,11 @@ h6 {
 
 
 /* Blocks */
+
+/* Main */
+.main {
+    background-color: var(--color-4);
+}
 
 /* Hamburger menu */
 #hamburger-menu {
@@ -301,16 +307,16 @@ h6 {
 .services {
     display: flex;
     justify-content: center;
-    margin-bottom: var(--section-bottom-margin);
+    padding-bottom: var(--section-bottom-margin);
+    margin: 0 var(--side-padding);
 }
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    /* grid-template-rows: repeat(1, 1fr); */
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 .services__grid img {
-    width: 300px;
+    width: 250px;
 }
 .services__grid h3 {
     margin-bottom: 10px;
@@ -318,16 +324,26 @@ h6 {
 .services__grid p {
     margin-bottom: 20px;
 }
+.services__card {
+    background-color: var(--color-1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
 @media (max-width: 1100px)
 {
     .services__grid {
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 700px)
 {
     .services__grid {
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
