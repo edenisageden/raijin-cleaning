@@ -194,6 +194,10 @@ h6 {
     background-color: var(--color-1);
     color: var(--color-2);
 }
+.on-page {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
 @media (orientation: portrait), (max-width: 950px)
 {
     .nav {
