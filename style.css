@@ -1,8 +1,8 @@
 /* Variables */
 :root {
     --color-1: white;
-    --color-2: black;
-    --color-3: grey;
+    --color-2: #212121;
+    --color-3: #777777ff;
     --color-4: #f2f2f2;
     --accent-color: #1c398a;
     --opaque-accent-color: rgba(28, 57, 138, 0.98);
@@ -17,7 +17,7 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    color: black;
+    color: var(--color-2);
     font-family: var(--font-1);
 }
 button {
@@ -69,6 +69,9 @@ h6 {
     font-weight: 500;
     line-height: 1;
     font-family: var(--font-1);
+}
+p {
+    color: var(--color-3);
 }
 
 
@@ -420,7 +423,8 @@ h6 {
     margin-bottom: 20px;
 }
 .about-us img {
-    width: 550px;
+    width: 450px;
+    height: 450px;
 }
 @media (orientation: portrait), (max-width: 950px)
 {
@@ -499,7 +503,7 @@ h6 {
     margin-bottom: 20px;
 }
 .message button {
-    background-color: black;
+    background-color: var(--color-2);
     color: white;
     height: 40px;
 } 
