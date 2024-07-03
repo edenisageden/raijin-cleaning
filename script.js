@@ -24,7 +24,7 @@ images[3] = "images/banner4.jpg";
 titles[0] = "RAIJIN CLEANING";
 titles[1] = "COMMERCIAL CLEANING";
 titles[2] = "RESIDENTIAL CLEANING";
-titles[3] = "CARPET CLEANING";
+titles[3] = "WINDOW CLEANING";
 
 background = document.getElementById("banner");
 title = document.getElementById("title");
