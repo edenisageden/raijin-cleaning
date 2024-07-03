@@ -74,7 +74,7 @@ const validateInputs = () => {
     }
 
     if(companyValue === '') {
-        setError(company, 'Please enter your company');
+        setSuccess(company)
     } else {
         setSuccess(company);
     }
