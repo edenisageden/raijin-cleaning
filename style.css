@@ -416,6 +416,9 @@ h6 {
     margin-right: 30px;
     margin-bottom: 30px;
 }
+.about-us p {
+    margin-bottom: 20px;
+}
 .about-us img {
     width: 550px;
 }
