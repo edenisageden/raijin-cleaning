@@ -113,13 +113,16 @@ p {
     right: 0;
     width: 0%;
     height: 100vh;
-    background-color: white;
+    background-color: var(--accent-color);
     transition-duration: 0.15s;
     transition-property: width;
     transition-timing-function: ease-in;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+#hamburger-menu a {
+    color: var(--color-1)
 }
 .hamburger-menu__link__wrapper {
     display: flex;
