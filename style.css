@@ -60,7 +60,7 @@ h4 {
 }
 h5 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1;
     font-family: var(--font-1);
 }
@@ -367,24 +367,25 @@ p {
     gap: 30px;
 }
 .services__grid img {
-    width: 250px;
-    margin-bottom: 10px;
+    width: 200px;
+    margin-bottom: 20px;
 }
-.services__grid h3 {
+.services__grid h5 {
     margin-bottom: 10px;
 }
 .services__grid p {
-    margin-bottom: 20px;
+    margin-bottom: auto;
 }
 .services__card {
     background-color: var(--color-1);
-    padding: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     text-align: center;
     border-radius: 10px;
+    min-height: 440px;
 }
 @media (max-width: 1100px)
 {
