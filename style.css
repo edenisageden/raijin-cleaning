@@ -137,20 +137,20 @@ p {
     position: fixed;
     width: 30px;
     height: 30px;
-    top: 87.5px;
+    top: 60px;
     right: var(--side-padding);
     display: none;
 }
 @media (max-width: 600px)
 {
     .hamburger-menu__button__wrapper {
-        top: 110px;
+        top: 75px;
     }
 }
 @media (max-width: 412px)
 {
     .hamburger-menu__button__wrapper {
-        top: 127.5px;
+        top: 87px;
     }
 }
 .hamburger-menu__button__wrapper button {
@@ -437,17 +437,20 @@ p {
 {
     .about-us img {
         width: 400px;
+        height: 400px;
     }
 }
 @media (max-width: 450px)
 {
     .about-us img {
         width: 300px;
+        height: 300px;
     }
 }
 @media (max-width: 350px)
 {
     .about-us img {
+        width: 250px;
         width: 250px;
     }
 }
