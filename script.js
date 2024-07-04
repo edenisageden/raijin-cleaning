@@ -26,14 +26,14 @@ var title = document.getElementById("title");
 
 function nextImage() {
   i += 1;
-  if (i > images.length - 1) i = 0;
+  if (i > images.length - 1) { i = 0; }
   var imageNum = i + 1;
   background.style.backgroundImage = "url('images/banner" + imageNum + ".jpg')";
   title.innerText = titles[i];
 }
 function prevImage() {
   i -= 1;
-  if (i < 0) i = images.length - 1;
+  if (i < 0) { i = images.length - 1; }
   var imageNum = i + 1;
   background.style.backgroundImage = "url('images/banner" + imageNum + ".jpg')";
   title.innerText = titles[i];
