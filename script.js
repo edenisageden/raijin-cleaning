@@ -28,8 +28,8 @@ titles[1] = "COMMERCIAL CLEANING";
 titles[2] = "RESIDENTIAL CLEANING";
 titles[3] = "WINDOW CLEANING";
 
-background = document.getElementById("banner");
-title = document.getElementById("title");
+var background = document.getElementById("banner");
+var title = document.getElementById("title");
 
 function nextImage() {
   console.log("next");
