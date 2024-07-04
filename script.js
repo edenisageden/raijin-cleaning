@@ -34,6 +34,7 @@ function nextImage() {
 function prevImage() {
   i -= 1;
   if (i < 0) { i = images.length - 1; }
-  background.style.backgroundImage = "url('images/banner" + i + 1 + ".jpg')";
+  var imageNum = i + 1;
+  background.style.backgroundImage = "url('images/banner" + imageNum + ".jpg')";
   title.innerText = titles[i];
 }
