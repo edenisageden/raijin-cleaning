@@ -324,6 +324,12 @@ p {
         width: 30px;
     }
 }
+@media (max-width: 400px)
+{
+    .banner__text h2 {
+        font-size: 2rem;
+    }
+}
 
 /* Trusted by */
 @keyframes slide {
