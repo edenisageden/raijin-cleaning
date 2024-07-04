@@ -1,3 +1,5 @@
+/*global document: false */
+
 // Hamburger menu
 function toggleMenu() {
   if (document.getElementById("hamburger-menu").style.width === "0%") {
