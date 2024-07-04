@@ -14,8 +14,8 @@ function toggleMenu() {
 
 // Slideshow
 var i = 0;
-var images = []
-var titles = []
+var images = [];
+var titles = [];
 var time = 5000;
 
 images[0] = "images/banner1.jpg";
