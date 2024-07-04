@@ -1,8 +1,16 @@
 /*global document: false */
+/*jslint white:true*/
+/*jshint strict: true */
 
 // Hamburger menu
 function toggleMenu() {
-  if (document.getElementById("hamburger-menu").style.width === "0%") { document.getElementById("hamburger-menu").style.width = "100%"; document.getElementById("hamburger-menu__button__img").src = "images/cross.png"; } else { document.getElementById("hamburger-menu").style.width = "0%"; document.getElementById("hamburger-menu__button__img").src = "images/hamburger-menu-white.png"; }
+  "use strict";
+  if (document.getElementById("hamburger-menu").style.width === "0%") { 
+    document.getElementById("hamburger-menu").style.width = "100%"; 
+    document.getElementById("hamburger-menu__button__img").src = "images/cross.png"; 
+  } else { document.getElementById("hamburger-menu").style.width = "0%"; 
+    document.getElementById("hamburger-menu__button__img").src = "images/hamburger-menu-white.png"; 
+  }
 }
 
 // Slideshow
@@ -25,14 +33,16 @@ var background = document.getElementById("banner");
 var title = document.getElementById("title");
 
 function nextImage() {
+  "use strict";
   i += 1;
   if (i > images.length - 1) { i = 0; }
   background.style.backgroundImage = "url('images/banner" + (i + 1) + ".jpg')";
   title.innerText = titles[i];
 }
 function prevImage() {
+  "use strict";
   i -= 1;
-  if (i < 0) { i = images.length - 1; }
+  if (i < 0) { i = images.length - 1; } 
   background.style.backgroundImage = "url('images/banner" + (i + 1) + ".jpg')";
   title.innerText = titles[i];
 }
